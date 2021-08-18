@@ -1,0 +1,15 @@
+<h1>Contacts#new</h1>
+<p>Find me in app/views/contacts/new.html.erb</p>
+
+<h3>Create a new contact</h3>
+<%= form_with model: @contact do |form| %>
+  <%= form.text_field :firstname, placeholder: "Firstname" %>
+  <%= form.text_field :lastname, placeholder: "Lastname" %>
+  <%= form.submit %>
+<% end %>
+
+<!-- <%= form_for @contact do |form| %>
+  <%= form.text_field :firstname, placeholder: "Firstname" %>
+  <%= form.text_field :lastname, placeholder: "Lastname" %>
+  <%= form.submit %>
+<% end %> -->

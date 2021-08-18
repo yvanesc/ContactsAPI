@@ -1,0 +1,9 @@
+<h1>Contacts#edit</h1>
+<p>Find me in app/views/contacts/edit.html.erb</p>
+
+<h3>Update Contact Details</h3>
+<%= form_with model: @contact do |form| %>
+  <%= form.text_field :firstname, placeholder: "Firstname" %>
+  <%= form.text_field :lastname, placeholder: "Lastname" %>
+  <%= form.submit %>
+<% end %>

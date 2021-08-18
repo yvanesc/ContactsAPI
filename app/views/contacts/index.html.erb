@@ -1,0 +1,10 @@
+
+<table>
+  <% @contacts.each do |contact| %>
+    <tr>
+      <td><%= link_to contact.Firstname, contact_path(contact) %></td>
+      <td><%= button_to 'Edit', edit_contact_path(contact), method: 'get'%></td>
+      <td><%= button_to 'Remove', contact_path(contact), method: 'delete', data: { confirm: 'Are you sure?' } %></td>
+  <% end %>
+</table>
+<%= link_to "Add a New Contact", new_contact_path %>
