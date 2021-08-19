@@ -16,7 +16,7 @@ class ContactsController < ApplicationController
   def create
     contact = Contact.create(contact_params)
 
-    redirect_to contact_path(contact)
+    redirect_to contacts_path(contact)
   end
 
   def edit
